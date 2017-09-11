@@ -29,16 +29,16 @@ For case D4, RFC and CAB Ballot permit a CA to issue. However, CAs may (and mayb
 
 
 
-| CA                | D1         | D2         | D3         | D4         | Comment                                  |
-| ----------------- | ---------- | ---------- | ---------- | ---------- | ---------------------------------------- |
-| RapidSSL          | Refused    | Refused    | Refused    | Refused    | same backend as GeoTrust                 |
-| GeoTrust          | Refused    | Refused    | Refused    | Refused    |                                          |
-| Comodo InstantSSL | **Issued** | **Issued** | **Issued** | **Issued** | No CAA checks visible at DNS server      |
-| LetsEncrypt       | Refused    | Refused    | Refused    | Refused    |                                          |
-| GoDaddy           | Refused    | Pending    | Refused    | Issued     |                                          |
-| Startcom          | Pending    | **Issued** | Pending    | Pending    |                                          |
-| Buypass           | Refused    | **Issued** | Refused    | Pending    |                                          |
-| Certum            | Pending    | Pending    | Pending    | Pending    | appears to check, pending for 3 days now |
+| CA                | D1                                       | D2                                       | D3         | D4         | Comment                                  |
+| ----------------- | ---------------------------------------- | ---------------------------------------- | ---------- | ---------- | ---------------------------------------- |
+| RapidSSL          | Refused                                  | Refused                                  | Refused    | Refused    | same backend as GeoTrust                 |
+| GeoTrust          | Refused                                  | Refused                                  | Refused    | Refused    |                                          |
+| Comodo InstantSSL | [**Issued**](https://crt.sh/?id=206719317) | **Issued**                               | **Issued** | **Issued** | No CAA checks visible at DNS server      |
+| LetsEncrypt       | Refused                                  | Refused                                  | Refused    | Refused    |                                          |
+| GoDaddy           | Refused                                  | Pending                                  | Refused    | Issued     |                                          |
+| Startcom          | Pending                                  | [**Issued**](https://crt.sh/?id=206719317) | Pending    | Pending    |                                          |
+| Buypass           | Refused                                  | [**Issued**](https://crt.sh/?id=208455849) | Refused    | Pending    |                                          |
+| Certum            | Pending                                  | Pending                                  | Pending    | Pending    | appears to check, pending for 3 days now |
 
 
 
