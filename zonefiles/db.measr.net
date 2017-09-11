@@ -1,0 +1,22 @@
+;; Zone dump (Knot DNS 2.4.0)
+measr.net.    	0	SOA	li1486-112.members.linode.com. hostmaster.measr.net. 11 0 0 0 0
+measr.net.    	0	NS	li1486-112.members.linode.com.
+measr.net.    	0	NS	li327-22.members.linode.com.	
+measr.net.		0	A 	139.162.169.112
+measr.net.	IN	CAA	128 issue "buypass.com"
+measr.net.	IN	CAA	128 issue "comodo.com"
+measr.net.	IN	CAA	128 issue "godaddy.com"
+measr.net.	IN	CAA	128 issue "letsencrypt.org"
+measr.net.	IN	CAA	128 issue "startcomca.com"
+measr.net.	IN	CAA	128 issue "symantec.com"
+measr.net.	IN	CAA	128 issue "wosign.com"
+measr.net.	IN	CAA	128 issuewild ";"
+measr.net.	IN	CAA	128 iodef "mailto:domains@net.in.tum.de"
+measr.net.	0	CAA 	128 netintum "doesnotexist"
+measr.net.    	0	MX	10 nimbus.net.in.tum.de.
+nsffm			0	A	139.162.169.112
+nsffm			0	AAAA	2a01:7e01::f03c:91ff:fe79:63a8
+nsnewark		0	A	66.228.46.22
+nsnewark		0	AAAA	2600:3c03::f03c:91ff:fee2:82c2	
+;; Written 16 records
+;; Time 2017-08-30 16:54:29 CEST
