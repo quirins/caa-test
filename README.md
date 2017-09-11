@@ -25,15 +25,15 @@ The zone files can be found under zonefiles/.
 
 
 
-| CA                | D1         | D2         | D3         | D$         | Comment                                  |
+| CA                | D1         | D2         | D3         | D4         | Comment                                  |
 | ----------------- | ---------- | ---------- | ---------- | ---------- | ---------------------------------------- |
 | RapidSSL          | Refused    | Refused    | Refused    | Refused    | same backend as GeoTrust                 |
 | GeoTrust          | Refused    | Refused    | Refused    | Refused    |                                          |
 | Comodo InstantSSL | **Issued** | **Issued** | **Issued** | **Issued** | No CAA checks visible at DNS server      |
 | LetsEncrypt       | Refused    | Refused    | Refused    | Refused    |                                          |
-| GoDaddy           | Refused    | Pending    |            |            |                                          |
+| GoDaddy           | Refused    | Pending    | Refused    | Issued     |                                          |
 | Startcom          | Pending    | **Issued** | Pending    | Pending    |                                          |
-| Buypass           | Refused    | **Issued** |            |            |                                          |
+| Buypass           | Refused    | **Issued** | Refused    | Pending    |                                          |
 | Certum            | Pending    | Pending    | Pending    | Pending    | appears to check, pending for 3 days now |
 
 
