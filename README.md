@@ -12,12 +12,16 @@ The zone files can be found under zonefiles/.
  
 
 
-| Domain | Setup                                    | Expected CA Behavior |
-| ------ | ---------------------------------------- | -------------------- |
-| D1     | Zone signed, CAA: 0 issue ";"            | Refuse               |
-| D2     | Zone signed, Timeout on CAA record       | Refuse               |
-| D3     | Not signed, issue permitted, but critical flag and nonexistent  CAA record set | Refuse               |
-| D4     | Not signed, timeout on CAA record        | Issue after retry    |
+| Domain | Setup                                    | Expected CA Behavior        |
+| ------ | ---------------------------------------- | --------------------------- |
+| D1     | Zone signed, CAA: 0 issue ";"            | Refuse                      |
+| D2     | Zone signed, Timeout on CAA record       | Refuse                      |
+| D3     | Not signed, issue permitted, but critical flag and nonexistent  CAA record set | Refuse                      |
+| D4     | Not signed, timeout on CAA record        | Retry, then Refuse or Issue |
+
+
+
+For case D4, RFC and CAB Ballot permit a CA to issue. However, CAs may (and maybe should) be more conservative and decide to refuse to issue after a timeout no the CAA record.
 
 
 
