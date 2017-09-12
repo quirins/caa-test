@@ -29,17 +29,23 @@ For case D4, RFC and CAB Ballot permit a CA to issue. However, CAs may (and mayb
 
 
 
-| CA                | D1                                       | D2                                       | D3                                       |
-| ----------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- |
-| RapidSSL          | Refused                                  | Refused                                  | Refused                                  |
-| GeoTrust          | Refused                                  | Refused                                  | Refused                                  |
-| Comodo InstantSSL | [**Issued**](https://crt.sh/?id=206719317) | [**Issued**](https://crt.sh/?id=208486485) | [**Issued**](https://crt.sh/?id=208486489) |
-| LetsEncrypt       | Refused                                  | Refused                                  | Refused                                  |
-| GoDaddy           | Refused                                  | Pending                                  | Refused                                  |
-| Startcom          | Pending                                  | [**Issued**](https://crt.sh/?id=206719317) | Pending                                  |
-| Buypass           | Refused                                  | [**Issued**](https://crt.sh/?id=208455849) | Refused                                  |
-| Certum            | Pending                                  | Pending                                  | Pending                                  |
-| DigiCert          | Refused                                  |                                          |                                          |
+| CA                | D1                                       | D2                                       | D3                                       | D4                                       | Comment                                  |
+| ----------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- |
+| RapidSSL          | Refused                                  | Refused                                  | Refused                                  | Refused                                  | same backend as GeoTrust                 |
+| GeoTrust          | Refused                                  | Refused                                  | Refused                                  | Refused                                  |                                          |
+| Comodo InstantSSL | [**Issued**](https://crt.sh/?id=206719317) | [**Issued**](https://crt.sh/?id=208486485) | [**Issued**](https://crt.sh/?id=208486489) | [**Issued**](https://crt.sh/?id=208486495) | No CAA checks visible at DNS server      |
+| LetsEncrypt       | Refused                                  | Refused                                  | Refused                                  | Refused                                  |                                          |
+| GoDaddy           | Refused                                  | Pending                                  | Refused                                  | **[**Issued**](https://crt.sh/?id=208554363)** | D4 issued after 5 minutes of 51 retries from 4 source IP addresses. |
+| Startcom          | Pending                                  | [**Issued**](https://crt.sh/?id=206719317) | Pending                                  | Pending                                  |                                          |
+| Buypass           | Refused                                  | [**Issued**](https://crt.sh/?id=208455849) | Refused                                  | Cancelled                                | D4 cancelled after 2 days pending in wake of our bug report for D2. |
+| Certum            | Refused                                  | Pending                                  | Pending                                  | **Issued**                               | D4 retried 24 seconds, 7 retries, 1 source IP, towards 1NS. |
+| Digicert          | Rejected                                 | --                                       | --                                       | --                                       | not all cases tested due to high costs and lengthy organization validation |
+
+
+
+[Discussion on D2](https://groups.google.com/forum/#!topic/mozilla.dev.security.policy/-o-qkJzPe5Q)
+
+[Comodo Bug Report](https://bugzilla.mozilla.org/show_bug.cgi?id=1398545)
 
 
 
