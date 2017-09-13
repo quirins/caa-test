@@ -38,7 +38,7 @@ For case D4, RFC and CAB Ballot permit a CA to issue. However, CAs may (and mayb
 | GoDaddy           | Refused                                  | Pending                                  | Refused                                  | [**Issued**](https://crt.sh/?id=208554363) | D4 issued after 5 minutes of 51 retries from 4 source IP addresses. |
 | Startcom          | Pending                                  | [**Issued**](https://crt.sh/?id=206719317) | Pending                                  | Pending                                  |                                          |
 | Buypass           | Refused                                  | [**Issued**](https://crt.sh/?id=208455849) | Refused                                  | Cancelled                                | D4 cancelled after 2 days pending in wake of our bug report for D2. |
-| Certum            | Refused                                  | [**Issued**](https://crt.sh/?id=209403143) | Refused                                  | [**Issued**](https://crt.sh/?id=209403143) | D4 retried 24 seconds, 7 retries, 1 source IP, towards 1NS. |
+| Certum            | Refused                                  | [**Issued**](https://crt.sh/?id=209378608) | Refused                                  | [**Issued**](https://crt.sh/?id=209403143) | D4 retried 24 seconds, 7 retries, 1 source IP, towards 1NS. |
 | Digicert          | Rejected                                 | --                                       | --                                       | --                                       | not all cases tested due to high costs and lengthy organization validation |
 
 
