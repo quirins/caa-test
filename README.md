@@ -35,11 +35,12 @@ For case D4, RFC and CAB Ballot permit a CA to issue. However, CAs may (and mayb
 | GeoTrust          | Refused                                  | Refused                                  | Refused                                  | Refused                                  |                                          |
 | Comodo InstantSSL | [**Issued**](https://crt.sh/?id=208456003) | [**Issued**](https://crt.sh/?id=208486485) | [**Issued**](https://crt.sh/?id=208486489) | [**Issued**](https://crt.sh/?id=208486495) | No CAA checks visible at DNS server      |
 | LetsEncrypt       | Refused                                  | Refused                                  | Refused                                  | Refused                                  |                                          |
-| GoDaddy           | Refused                                  | Pending                                  | Refused                                  | [**Issued**](https://crt.sh/?id=208554363) | D4 issued after 5 minutes of 51 retries from 4 source IP addresses. |
+| GoDaddy           | Refused                                  | Refused                                  | Refused                                  | [**Issued**](https://crt.sh/?id=208554363) | D4 issued after 5 minutes of 51 retries from 4 source IP addresses. |
 | Startcom          | Pending                                  | [**Issued**](https://crt.sh/?id=206719317) | Pending                                  | Pending                                  |                                          |
 | Buypass           | Refused                                  | [**Issued**](https://crt.sh/?id=208455849) | Refused                                  | Cancelled                                | D4 cancelled after 2 days pending in wake of our bug report for D2. |
 | Certum            | Refused                                  | [**Issued**](https://crt.sh/?id=209378608) | Refused                                  | [**Issued**](https://crt.sh/?id=209403143) | D4 retried 24 seconds, 7 retries, 1 source IP, towards 1NS. |
-| Digicert          | Rejected                                 | --                                       | --                                       | --                                       | not all cases tested due to high costs and lengthy organization validation |
+| Digicert          | Refused                                  | --                                       | --                                       | --                                       | not all cases tested due to high costs and lengthy organization validation |
+| Network Solution  | Pending                                  | --                                       | --                                       | --                                       |                                          |
 
 
 
