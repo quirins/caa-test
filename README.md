@@ -4,6 +4,8 @@ We conduct controlled experiments to analyze whether CAs hone the CAA record tha
 
 We conduct 1 round of tests right at CAA record effectiveness (around September 9), and a round of re-tests a month later (October 10th).
 
+UPDATE 2017-11-15: DigiCert has done an extense review of our test case D2, and even identified 4 new certificates affected by the same problem. [Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1409735)
+
 ## Test Domain Setups
 
 We set up several test domains to check various corner cases of CAA deployment.  
