@@ -1,8 +1,10 @@
 # CAA Issuance Tests
 
-We conduct controlled experiments to analyze whether CAs hone the CAA record that has recently come into effect. 
+We conduct controlled experiments to analyze whether CAs hone the CAA record that has come into effect on September 8, 2017.
 
 We conduct 1 round of tests right at CAA record effectiveness (around September 9), and a round of re-tests a month later (October 10th).
+
+UPDATE 2017-11-23: We have identified issuance anomalies based on historic DNS records [Link](https://groups.google.com/d/msg/mozilla.dev.security.policy/QpSVjzrj7T4/d9mZOCGUAgAJ)
 
 UPDATE 2017-11-15: DigiCert has done an extense review of our test case D2, and even identified 4 new certificates affected by the same problem. [Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1409735)
 
@@ -83,6 +85,7 @@ For example (Refused/Issued) indicates that a CA refused to issue in the first t
 [Comodo First Round Bug Report](https://bugzilla.mozilla.org/show_bug.cgi?id=1398545)
 
 
+----
 
 We will update this page as more information becomes available.
 You are very welcome to contact us through email/phone as listed on https://www.net.in.tum.de/members/scheitle/
@@ -91,38 +94,19 @@ Further information and opt-out contacts are given under https://net.in.tum.de/p
 
 
 
-Links:
+### Useful Links:
 
-RapidSSL/GeoTrust/Symantec/Thawte
+[RapidSSL/GeoTrust/Symantec/Thawte Trial Certificates](https://www.freessl.com/freessl/#product-trials)
 
-https://www.freessl.com/freessl/#product-trials
+Comodo [1](https://www.instantssl.com/free-ssl-certificate.html?track=3338) [2](https://secure.instantssl.com/products/SSLIdASignup1a)
 
-Comodo:
+[Certum](https://en.sklep.certum.pl/test_certificates)
 
-https://www.instantssl.com/free-ssl-certificate.html?track=3338
+[CSR checker](https://cryptoreport.geotrust.com/checker/views/csrCheck.jsp)
 
-https://secure.instantssl.com/products/SSLIdASignup1a
-
-Certum
-
-https://en.sklep.certum.pl/test_certificates
-
-CSR checker:
-
-https://cryptoreport.geotrust.com/checker/views/csrCheck.jsp
+[Mozilla NSS Mis-Issuance Bugtracker](https://bugzilla.mozilla.org/buglist.cgi?product=NSS&component=CA%20Certificate%20Mis-Issuance&resolution=---&list_id=13836795)
 
 
+[Mozilla CA contacts](https://ccadb-public.secure.force.com/mozilla/CAInformationReport)
 
-Mozilla NSS Mis-Issuance Bugtracker:
-
-https://bugzilla.mozilla.org/buglist.cgi?product=NSS&component=CA%20Certificate%20Mis-Issuance&resolution=---&list_id=13836795
-
-
-
-Mozilla CA contact:
-
-https://ccadb-public.secure.force.com/mozilla/CAInformationReport
-
-
-
-SSL.com revoke mechanism: https://www.ssl.com/revoke/
+[SSL.com revoke mechanism](https://www.ssl.com/revoke/)
