@@ -31,7 +31,7 @@ Zone files can be found under zonefiles/.
 
 
 
-For case D4, RFC and CAB Ballot permit a CA to issue. However, CAs may (and maybe should) be more conservative and decide to refuse to issue after a timeout no the CAA record.
+For case D4, RFC and CAB Ballot permit a CA to issue. However, CAs may (and maybe should) be more conservative and decide to refuse to issue after a timeout on the CAA record.
 
 [1] More explanation on D2: The zonefile contains an "issue ;" CAA record, and all CAA replies for that zone are dropped. As the zone is signed, even in case of a non-dropped reply, no CA would be authorized to issue. 
 
